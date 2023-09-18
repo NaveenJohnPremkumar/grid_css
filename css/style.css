@@ -2,10 +2,11 @@
 Make the text centered
 Give it a margin of 10px
 Font size should be twice the normal size */
-/* h1, h2{
-	
-  
-  } */
+h1, h2{
+	text-align: center;
+	margin: 10px;
+	font-size: 200%;
+} 
 
   /* style the grid container
   Dislay should be grid
@@ -13,19 +14,38 @@ Font size should be twice the normal size */
   Grid gap of 10px
    */
 .grid {
-		display: grid;
+	/*Grid Specific*/
+	width: 800px;
+	display: grid;
+	grid-template-columns: 150px 150px 150px;
+	grid-gap: 10px;
+	justify-content: space-between;
+	align-items: baseline;
+
+	/*General Styline*/
+	background-color: #2196F3;
+	background-image: url('..images\background.jpg');
+	padding: 10px;
+	/*width:620px; */
+	text-align: center;
+	font-size: 30px;
+	border: 3px solid black;
+	border-radius: 25px;
+	margin: 0 auto;
+}
 /* add a background-color:  of #2196f3
 Add  a background image that links to the image in your folder */
-			padding: 10px;
-			width: 620px;
 /* Add a solid black 3px border and round the corners */
-			text-align: center;
-			font-size: 30px;
-		  }
 
 /* Style the divs inside of the grid 
 Give them a background of #e5e5e5 
 Add 20px of padding & font-size of 30px  */
+.grid > div {
+	background-color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	padding: 20px;
+	font-size: 30px;
+}
 
 
 
